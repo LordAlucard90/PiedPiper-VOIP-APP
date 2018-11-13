@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PercentageLayout">
+        <attr name="default_percentage" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="PhoneButton">
+        <attr name="primary_text" format="string"/>
+        <attr name="secondary_text" format="string"/>
+        <attr name="search_letters" format="string"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">PiedPiper</string>
+    <string name="connection_error">Connection error, please try later.</string>
+    <string name="calls_register" translatable="false">
+    {
+    "lost": [
+        {
+          "caller_name":\"Jane Doe\",
+          "caller_number":\"0123456789\",
+          "date":\"2018.01.15 11:35:22\",
+          "time":\"42 sec\",
+          "pp_message":\"call me, now!\",
+          "pp_audio":\"\"
+        }
+    ],
+    "received": [
+        {
+          "caller_name":\"John Doe\",
+          "caller_number":\"0123456789\",
+          "date":\"2018.01.08 17.30.22\",
+          "time":\"42 sec\",
+          "pp_message":\"\",
+          "pp_audio":\"\"
+        }
+    ],
+    "dialed": [
+        {
+          "caller_name":\"Jane Doe\",
+          "caller_number":\"0123456789\",
+          "date":\"2018.01.15 11:56:42\",
+          "time":\"10 min 42 sec\",
+          "pp_message":\"\",
+          "pp_audio":\"\"
+        }
+    ]
+    }
+    </string>
+    <string name="call_message_hint">Write something here</string>
+    <string name="call_filter_all">All</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">Ok</string>
+    <string name="call_filter_done">Done</string>
+    <string name="call_filter_lost">Lost</string>
+    <string name="call_top_hint">PiedPiper VOICE CALL</string>
+    <string name="call_ended">Call ended</string>
+    <string name="call_close">Close</string>
+    <string name="record_send">Send</string>
+    <string name="record_delete">Delete</string>
+    <string name="call_record_cancel">Cancel</string>
+    <string name="record_or_message_sending">Sending..</string>
+    <string name="call_send_message">Send or Record message</string>
+    <string name="call_send_audio">Send</string>
+    <string name="call_recall">Recall</string>
+    <string name="contacts_filter_all">All Contacts</string>
+    <string name="contacts_filter_pponly">PP Only</string>
+    <string name="contacts_search_hint">Search a contact</string>
+    <string name="call_progress_hint">Waiting for an answer...</string>
+    <string name="pp_first_run">This is your first run! Please insert your phone number:</string>
+    <string name="pp_first_run_hint">Enter number here..</string>
+    <string name="accept_storage">Let app manage storage to continue.</string>
+    <string name="accept_contacts">Let app manage contacts to continue.</string>
+    <string name="accept_record">Let app manage microphone to continue.</string>
+    <string name="send_a_message">Send message</string>
+    <string name="send_msg_error_empty">Message can\'t be empty.</string>
+    <string name="record_start">Record started.</string>
+    <string name="accept_contacts_2">Please let app manage contacts for correct work.</string>
+    <string name="accept_record_2">Please let app manage microphone for correct work.</string>
+    <string name="accept_storage_2">Please let app manage storage for correct work.</string>
+</resources>

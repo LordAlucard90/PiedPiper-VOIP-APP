@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/fragment_contacts_id"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="it.unifi.hci.piedpiper.Fragments.ContactsList">
+
+        <EditText
+            android:id="@+id/contact_search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:textSize="14sp"
+            android:focusedByDefault="false"
+            android:hint="@string/contacts_search_hint"
+            android:background="@color/inputBackgroundColor"
+            android:lines="1"
+            android:maxLines="1"
+            android:elevation="2dp"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="95"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/contacts_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+            />
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lateral_bar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/colorAccent"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/A" style="@style/alphabetTextView" android:tag="A"
+                    android:text="A"/>
+                <TextView android:id="@+id/B" style="@style/alphabetTextView" android:tag="B"
+                    android:text="B" />
+                <TextView android:id="@+id/C" style="@style/alphabetTextView" android:tag="C"
+                    android:text="C" />
+                <TextView android:id="@+id/D" style="@style/alphabetTextView" android:tag="D"
+                    android:text="D" />
+                <TextView android:id="@+id/E" style="@style/alphabetTextView" android:tag="E"
+                    android:text="E" />
+                <TextView android:id="@+id/F" style="@style/alphabetTextView" android:tag="F"
+                    android:text="F" />
+                <TextView android:id="@+id/G" style="@style/alphabetTextView" android:tag="G"
+                    android:text="G" />
+                <TextView android:id="@+id/H" style="@style/alphabetTextView" android:tag="H"
+                    android:text="H" />
+                <TextView android:id="@+id/I" style="@style/alphabetTextView" android:tag="I"
+                    android:text="I" />
+                <TextView android:id="@+id/J" style="@style/alphabetTextView" android:tag="J"
+                    android:text="J" />
+                <TextView android:id="@+id/K" style="@style/alphabetTextView" android:tag="K"
+                    android:text="K" />
+                <TextView android:id="@+id/L" style="@style/alphabetTextView" android:tag="L"
+                    android:text="L" />
+                <TextView android:id="@+id/M" style="@style/alphabetTextView" android:tag="M"
+                    android:text="M" />
+                <TextView android:id="@+id/N" style="@style/alphabetTextView" android:tag="N"
+                    android:text="N" />
+                <TextView android:id="@+id/O" style="@style/alphabetTextView" android:tag="O"
+                    android:text="O" />
+                <TextView android:id="@+id/P" style="@style/alphabetTextView" android:tag="P"
+                    android:text="P" />
+                <TextView android:id="@+id/Q" style="@style/alphabetTextView" android:tag="Q"
+                    android:text="Q" />
+                <TextView android:id="@+id/R" style="@style/alphabetTextView" android:tag="R"
+                    android:text="R" />
+                <TextView android:id="@+id/S" style="@style/alphabetTextView" android:tag="S"
+                    android:text="S" />
+                <TextView android:id="@+id/T" style="@style/alphabetTextView" android:tag="T"
+                    android:text="T" />
+                <TextView android:id="@+id/U" style="@style/alphabetTextView" android:tag="U"
+                    android:text="U" />
+                <TextView android:id="@+id/V" style="@style/alphabetTextView" android:tag="V"
+                    android:text="V" />
+                <TextView android:id="@+id/W" style="@style/alphabetTextView" android:tag="W"
+                    android:text="W" />
+                <TextView android:id="@+id/X" style="@style/alphabetTextView" android:tag="X"
+                    android:text="X" />
+                <TextView android:id="@+id/Y" style="@style/alphabetTextView" android:tag="Y"
+                    android:text="Y" />
+                <TextView android:id="@+id/Z" style="@style/alphabetTextView" android:tag="Z"
+                    android:text="Z" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/contacts_container_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorAccent"
+        android:layout_gravity="bottom|center">
+        <Button
+            android:id="@+id/contacts_all_filter"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts_filter_all"/>
+        <Button
+            android:id="@+id/contacts_pponly_filter"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/contacts_filter_pponly"/>
+    </LinearLayout>
+</FrameLayout>

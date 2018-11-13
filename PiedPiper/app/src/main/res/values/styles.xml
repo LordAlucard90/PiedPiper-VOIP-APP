@@ -1,0 +1,79 @@
+<resources>
+
+    <style name="PiedPiperMaterialTheme" parent="PiedPiperMaterialTheme.Base"/>
+
+    <style name="PiedPiperMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PiedPiperMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PiedPiperMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="alphabetTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.038</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Phone">
+
+    </style>
+
+    <style name="Phone.Keyboard" parent="Phone">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:background">@color/inputBackgroundColor</item>
+    </style>
+
+    <style name="Phone.Keyboard.NumKeyboard" parent="Phone.Keyboard">
+        <item name="android:layout_weight">5</item>
+    </style>
+
+    <style name="Phone.Keyboard.ActKeyboard" parent="Phone.Keyboard">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Phone.Keyboard.NumKeyboard.ButtonsRow" parent="Phone.Keyboard.NumKeyboard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Phone.Keyboard.ActKeyboard.ButtonsRow" parent="Phone.Keyboard.ActKeyboard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Phone.Keyboard.Button" parent="Phone.Keyboard">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Phone.Keyboard.BlackSpace" parent="Phone.Keyboard">
+        <item name="android:layout_weight">0.2</item>
+    </style>
+
+    <style name="Phone.Keyboard.Button.NumButton" parent="Phone.Keyboard.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_background_selector</item>
+    </style>
+
+    <style name="Phone.Keyboard.Button.ActButtom" parent="Phone.Keyboard.Button">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

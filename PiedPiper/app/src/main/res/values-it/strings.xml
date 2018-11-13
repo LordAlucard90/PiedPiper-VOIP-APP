@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connection_error">Errore di connessione, riprova più tardi.</string>
+    <string name="call_message_hint">Scrivi qualcosa qui</string>
+    <string name="call_filter_all">Tutte</string>
+    <string name="action_cancel">Annulla</string>
+    <string name="action_ok">Ok</string>
+    <string name="call_filter_done">Effettuate</string>
+    <string name="call_filter_lost">Perse</string>
+    <string name="call_top_hint">PiedPiper CHIAMATA VOCALE</string>
+    <string name="call_ended">Chiamata terminata</string>
+    <string name="call_close">Chiudi</string>
+    <string name="record_send">Invia</string>
+    <string name="record_delete">Cancella</string>
+    <string name="record_or_message_sending">Invio in corso..</string>
+    <string name="call_record_cancel">Annulla</string>
+    <string name="send_a_message">Invia messaggio</string>
+    <string name="call_send_message">Scrivi o Registra un messaggio</string>
+    <string name="call_recall">Ricomponi</string>
+    <string name="call_send_audio">Invia</string>
+    <string name="contacts_filter_all">Tutti i contatti</string>
+    <string name="contacts_filter_pponly">Solo PP</string>
+    <string name="contacts_search_hint">Cerca tra i contatti</string>
+    <string name="call_progress_hint">In attesa di risposta...</string>
+    <string name="pp_first_run">Questo è il tuo primo avvio! Inserisci il tuo numero:</string>
+    <string name="pp_first_run_hint">Scrivi qui il numero..</string>
+    <string name="accept_storage">Consenti l\'accesso alla memoria per continuare.</string>
+    <string name="accept_contacts">Consenti l\'accesso ai contatti per continuare.</string>
+    <string name="accept_record">Consenti l\'accesso al microfono per continuare.</string>
+    <string name="send_msg_error_empty">Errore messaggio vuoto.</string>
+    <string name="record_start">Avvio registrazione.</string>
+    <string name="accept_contacts_2">Perfavore consenti l\'accesso ai contatti per un corretto funzionamento.</string>
+    <string name="accept_record_2">Perfavore consenti l\'accesso al microfono per un corretto funzionamento.</string>
+    <string name="accept_storage_2">Perfavore consenti l\'accesso alla memoria per un corretto funzionamento.</string>
+</resources>

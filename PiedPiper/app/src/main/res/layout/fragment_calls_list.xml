@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="it.unifi.hci.piedpiper.Fragments.CallsList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/calls_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calls_container_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="bottom|center"
+        android:elevation="40dp"
+        android:background="@color/colorAccent">
+        <Button
+            android:id="@+id/calls_all_filter"
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contacts_bottom_actionbar"
+            android:singleLine="true"
+            android:text="@string/call_filter_all"/>
+        <Button
+            android:id="@+id/calls_dialed_filter"
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contacts_bottom_actionbar"
+            android:singleLine="true"
+            android:text="@string/call_filter_done"/>
+        <Button
+            android:id="@+id/calls_lost_filter"
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contacts_bottom_actionbar"
+            android:text="@string/call_filter_lost"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.unifi.hci.piedpiper.Fragments.ContactsList"
+    android:orientation="vertical"
+    android:id="@+id/phone_container">
+
+    <FrameLayout
+        android:id="@+id/phone_input_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/inputBackgroundColor">
+        <it.unifi.hci.piedpiper.Fragments.Elements.PhoneInputText
+            android:id="@+id/phone_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:lines="1"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:focusableInTouchMode="false"
+            android:background="@android:color/transparent"
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/keyboard_clear_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_keyboard_clear_number"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <it.unifi.hci.piedpiper.Fragments.Elements.PercentageLayout
+        android:id="@+id/contacts_phone_main_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/colorAccent"
+        custom:default_percentage="3">
+
+        <it.unifi.hci.piedpiper.Fragments.Elements.PhoneSearchList
+            android:id="@+id/contacts_phone_search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            />
+
+    </it.unifi.hci.piedpiper.Fragments.Elements.PercentageLayout>
+
+    <it.unifi.hci.piedpiper.Fragments.Elements.PercentageLayout
+        android:id="@+id/phone_keyboard_numbers_container"
+        custom:default_percentage="5"
+        style="@style/Phone.Keyboard.NumKeyboard">
+
+        <TableLayout
+            android:id="@+id/phone_keyboard_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow style="@style/Phone.Keyboard.NumKeyboard.ButtonsRow">
+                <Space style="@style/Phone.Keyboard.BlackSpace"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    custom:primary_text="1"
+                    custom:search_letters=""
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    custom:primary_text="2"
+                    custom:search_letters="abc"
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    custom:primary_text="3"
+                    custom:search_letters="def"
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <Space style="@style/Phone.Keyboard.BlackSpace"/>
+            </TableRow>
+
+            <TableRow style="@style/Phone.Keyboard.NumKeyboard.ButtonsRow">
+                <Space style="@style/Phone.Keyboard.BlackSpace"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    custom:primary_text="4"
+                    custom:search_letters="ghi"
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    custom:primary_text="5"
+                    custom:search_letters="jkl"
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    custom:primary_text="6"
+                    custom:search_letters="mno"
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <Space style="@style/Phone.Keyboard.BlackSpace"/>
+            </TableRow>
+
+            <TableRow style="@style/Phone.Keyboard.NumKeyboard.ButtonsRow">
+                <Space style="@style/Phone.Keyboard.BlackSpace"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    custom:primary_text="7"
+                    custom:search_letters="pqrs"
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    custom:primary_text="8"
+                    custom:search_letters="tuv"
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    custom:primary_text="9"
+                    custom:search_letters="wxyz"
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <Space style="@style/Phone.Keyboard.BlackSpace"/>
+            </TableRow>
+
+            <TableRow style="@style/Phone.Keyboard.NumKeyboard.ButtonsRow">
+                <Space style="@style/Phone.Keyboard.BlackSpace"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    android:id="@+id/asterisk"
+                    custom:primary_text="*"
+                    custom:search_letters=""
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    custom:primary_text="0"
+                    custom:search_letters=""
+                    custom:secondary_text="+"
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <it.unifi.hci.piedpiper.Fragments.Elements.PhoneButton
+                    android:id="@+id/sharp"
+                    custom:primary_text="#"
+                    custom:search_letters=""
+                    custom:secondary_text=""
+                    style="@style/Phone.Keyboard.Button.NumButton"/>
+                <Space style="@style/Phone.Keyboard.BlackSpace"/>
+            </TableRow>
+        </TableLayout>
+
+    </it.unifi.hci.piedpiper.Fragments.Elements.PercentageLayout>
+
+    <LinearLayout
+        style="@style/Phone.Keyboard.ActKeyboard"
+        android:orientation="horizontal"
+        android:id="@+id/phone_keyboard_actions_container">
+
+        <TableLayout
+            android:id="@+id/phone_keyboard_actions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                style="@style/Phone.Keyboard.ActKeyboard.ButtonsRow">
+                <Space style="@style/Phone.Keyboard.BlackSpace"/>
+
+                <ImageButton
+                    android:id="@+id/pview"
+                    android:src="@drawable/ic_keyboard_numbers"
+                    style="@style/Phone.Keyboard.Button.ActButtom"
+                    android:visibility="gone"/>
+
+                <ImageButton
+                    android:id="@+id/phide"
+                    android:src="@drawable/ic_hide_keyboard"
+                    style="@style/Phone.Keyboard.Button.ActButtom"/>
+
+                <ImageButton
+                    android:id="@+id/pcall"
+                    style="@style/Phone.Keyboard.Button.ActButtom"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/ic_call_keyboard"/>
+
+                <ImageButton
+                    android:id="@+id/poptions"
+                    style="@style/Phone.Keyboard.Button.ActButtom"
+                    android:src="@drawable/ic_keyboard_options"/>
+
+                <ImageButton
+                    android:id="@+id/pdel"
+                    style="@style/Phone.Keyboard.Button.ActButtom"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_keyboard_delete_number"/>
+
+                <Space style="@style/Phone.Keyboard.BlackSpace"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

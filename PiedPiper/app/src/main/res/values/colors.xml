@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00c853</color>
+    <color name="colorPrimaryLight">#5efc82</color>
+    <color name="colorPrimaryDark">#009624</color>
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorSecondary">#4caf50</color>
+    <color name="colorSecondaryLight">#80e27e</color>
+    <color name="colorSecondaryDark">#087f23</color>
+    <color name="colorSecondaryText">#000000</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorMissed">#ef5350</color>
+    <color name="colorUnselected">#c8ffffff</color>
+    <color name="callBackgroundColor">#343935</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="inputBackgroundColor">#f9f9f9</color>
+    <color name="remainingTimeBig">#4CAF50</color>
+    <color name="remainingTimeSmall">#FF9800</color>
+    <color name="remainingTimeNone">#F44336</color>
+</resources>
