@@ -1,5 +1,5 @@
 # PiedPiper-VOIP-APP
-PiedPiper is a VOIP application (name inspired from the homonym TV Show) developed for the Human Computer Interaction university course.
+PiedPiper is a Android VOIP application (name inspired from the homonym TV Show) developed for the Human Computer Interaction university course.
 
 In this project has been tried to add a new small features to a standard phone's call manager and measure the effect on the user experience.
 
